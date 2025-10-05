@@ -1740,7 +1740,7 @@ int sdp(n,k,C,a,constant_offset,constraints,byblocks,fill,X,y,Z,cholxinv,
 		   if (printlevel >=3)
 		     printf("Stuck at edge of primal feasibility.\n");
 		   
-		   if (retries < 15)
+		   if (retries < 100)
 		     {
 		       if (retries == 0)
 			 diagfact=0.1;
