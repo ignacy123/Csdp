@@ -2126,7 +2126,7 @@ int sdp(n,k,C,a,constant_offset,constraints,byblocks,fill,X,y,Z,cholxinv,
 	    *  give up, because we're not making progress.
 	    */
 
-	   if ((iter > 60) && (bestmeas > 0.5*bestarray[((iter-20) % BASIZE)]))
+	   if ((iter > 600) && (bestmeas > 0.5*bestarray[((iter-200) % BASIZE)]))
 	     {
 	       if (printlevel >= 1)
 		 printf("Lack of progress.  Giving up!\n");
